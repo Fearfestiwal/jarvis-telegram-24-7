@@ -1,0 +1,21 @@
+[project]
+name = "jarvis-telegram-24-7"
+version = "0.1.0"
+description = "7/24 bulut uyumlu Kisisel Turkce Jarvis Telegram Botu"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.0.0",
+    "python-telegram-bot>=21.0",
+    "python-dotenv>=1.0.0",
+    "gtts>=2.5.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
